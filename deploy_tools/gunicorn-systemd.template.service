@@ -5,7 +5,7 @@ Description=Gunicorn server for 8.140.61.226
 Restart=on-failure
 User=host
 WorkingDirectory=/home/host/sites/8.140.61.226/suplerlists
-ExecStart=gunicorn suplerlists.wsgi:application
+ExecStart=/home/host/sites/8.140.61.226/gunicorn suplerlists.wsgi:application
 
 [Install]
 WantedBy=multi-user.target
